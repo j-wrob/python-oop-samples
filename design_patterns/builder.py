@@ -6,8 +6,8 @@ class Director():
     - calls Concrete Builder's methods to build parts of a product
     - return completed product
     """
-    def __init__(self, concrete_builder):
-        self._builder = concrete_builder
+    def __init__(self, builder):
+        self._builder = builder
 
     def build_car(self):
         self._builder.create_car()
