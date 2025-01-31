@@ -78,13 +78,6 @@ class Car():
     def __str__(self):
         return f'{self.model} | {self.engine} | {self.color}'
 
-
-# builder = SkodaFavorit()
-# director = Director(builder)
-# director.build_car()
-# brand_new_car = director.get_car()
-# print(brand_new_car)
-
 for builder in [SkodaFavorit(), Fiat126()]:
     director = Director(builder)
     director.build_car()
